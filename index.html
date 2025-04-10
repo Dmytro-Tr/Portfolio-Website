@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./images/header/D and T-Photoroom.png" type="png">
+  <link rel="shortcut icon" href="./src/images/header/D and T-Photoroom.png" type="png">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Eczar:600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./src/css/styles.css">
   <title>Portfolio Dmytro_Tr</title>
 </head>
@@ -130,10 +133,54 @@
               <img class="mywork_img" src="./src/images/mywork/WebStudio.jpg" alt="Website screenshot">
             </a>
           </div>
-
         </div>
       </div>
     </section>
+
+    <section class="reviews section">
+      <div class="reviews_container container">
+        <div class="reviews_header">
+          <h2 class="reviews_title H2">Some generous reviews</h2>
+          <p class="reviews_subtitle H5">Some of my favorite customer and colleague testimonials</p>
+        </div>
+        <div class="swiper mySwiper reviewsSwiper">
+          <div class="swiper-wrapper reviews_swiper_wrapper">
+            <div class="swiper-slide reviews_swiper_slide">
+              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
+                not be taking me in any new,
+                creative design
+                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
+                exactly what I
+                needed to take.</p>
+              <p class="reviews_swiper_name">Aika Chan</p>
+            </div>
+            <div class="swiper-slide reviews_swiper_slide">
+              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
+                not be taking me in any new,
+                creative design
+                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
+                exactly what I
+                needed to take.</p>
+              <p class="reviews_swiper_name">Moksa Chan</p>
+            </div>
+            <div class="swiper-slide reviews_swiper_slide">
+              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
+                not be taking me in any new,
+                creative design
+                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
+                exactly what I
+                needed to take.</p>
+              <p class="reviews_swiper_name">Vill Chan</p>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
   <footer>
@@ -143,6 +190,10 @@
   </footer>
 
   <script src="./src/js/burger-btn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./src/js/reviews-swiper.js"></script>
+
+
 </body>
 
 </html>

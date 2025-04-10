@@ -1,5 +1,10 @@
 @import url(./reset.css);
 
+body {
+  position: relative;
+  height: 100%;
+}
+
 /* ------HEADER------ */
 .header {
   margin-top: 20px;
@@ -299,6 +304,11 @@
 }
 
 @media screen and (max-width:994px) {
+  .mywork {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
   .mywork_content {
     flex-direction: column;
     max-width: 591px;
@@ -313,5 +323,127 @@
   .mywork_text_links {
     justify-content: center;
     padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .mywork {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+/* ------reviews----- */
+.reviews {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.reviews_container {}
+
+.reviews_header {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.reviews_title {}
+
+.reviews_subtitle {
+  font-weight: 500;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper {}
+
+.reviewsSwiper {}
+
+.swiper-wrapper {}
+
+.reviews_swiper_wrapper {
+  max-width: 936px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews_swiper_slide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews_swiper_text {
+  text-align: center;
+  max-width: 391px;
+}
+
+.reviewsSwiper .swiper-button-prev,
+.reviewsSwiper .swiper-button-next {
+  color: #594f43;
+  width: 17px;
+  height: 29px;
+}
+
+.reviews_swiper_name {
+  font-weight: 700;
+  color: #594f43;
+}
+
+@media screen and (max-width:1220px) {
+  .reviews {
+    padding-top: 106px;
+    padding-bottom: 106px;
+  }
+
+  .reviews_swiper_text {
+    max-width: 332px;
+  }
+
+  .reviews_header {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (max-width:994px) {
+  .reviews {
+    padding-top: 86px;
+    padding-bottom: 86px;
+  }
+
+  .reviews_swiper_text {
+    max-width: 482px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .reviews {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .reviews_swiper_text {
+    max-width: 292px;
+  }
+
+  .reviews_header {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .reviews {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .reviews_swiper_text {
+    max-width: 206px;
   }
 }
