@@ -62,7 +62,7 @@ button {
   overflow: hidden;
 }
 
-.section {}
+/* .section {} */
 
 .container {
   margin: 0 auto;
@@ -130,6 +130,12 @@ button {
   line-height: 150%;
 }
 
+.H6 {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+}
+
 @media screen and (max-width:1220px) {
   .H1 {
     font-size: 54px;
@@ -149,6 +155,10 @@ button {
 
   .H5 {
     font-size: 17px;
+  }
+
+  .H6 {
+    font-size: 14px;
   }
 }
 
@@ -172,27 +182,9 @@ button {
   .H5 {
     font-size: 15.5px;
   }
-}
 
-@media screen and (max-width:425px) {
-  .H1 {
-    font-size: 50px;
-  }
-
-  .H2 {
-    font-size: 31px;
-  }
-
-  .H3 {
-    font-size: 25px;
-  }
-
-  .H4 {
-    font-size: 18.75px;
-  }
-
-  .H5 {
-    font-size: 15.5px;
+  .H6 {
+    font-size: 12.5px;
   }
 }
 

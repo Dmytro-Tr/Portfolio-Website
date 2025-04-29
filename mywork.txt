@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Load More Example</title>
+  <style>
+    .mywork_list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mywork_item {
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #f0f0f0;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .mywork_item.hidden {
+      display: none;
+    }
+
+    .mywork_button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="mywork_container">
+      <ul class="mywork_list">
+        <li class="mywork_item">Блок 1</li>
+        <li class="mywork_item">Блок 2</li>
+        <li class="mywork_item">Блок 3</li>
+        <li class="mywork_item hidden">Блок 4</li>
+        <li class="mywork_item hidden">Блок 5</li>
+        <li class="mywork_item hidden">Блок 6</li>
+        <li class="mywork_item hidden">Блок 7</li>
+        <li class="mywork_item hidden">Блок 8</li>
+      </ul>
+      <button class="mywork_button">Load more</button>
+    </div>
+  </section>
+
+  <script>
+    const items = document.querySelectorAll('.mywork_item');
+    const button = document.querySelector('.mywork_button');
+
+    let visibleCount = 3;
+
+    button.addEventListener('click', () => {
+      const hiddenItems = Array.from(items).slice(visibleCount);
+
+      if (button.textContent === 'Hide all') {
+        // Hide all except first 3
+        items.forEach((item, index) => {
+          if (index >= 3) item.classList.add('hidden');
+        });
+        visibleCount = 3;
+        button.textContent = 'Load more';
+        return;
+      }
+
+      const toShow = hiddenItems.slice(0, 3);
+      toShow.forEach(item => item.classList.remove('hidden'));
+
+      visibleCount += toShow.length;
+
+      if (visibleCount >= items.length) {
+        button.textContent = 'Hide all';
+      }
+    });
+  </script>
+</body>
+</html>
