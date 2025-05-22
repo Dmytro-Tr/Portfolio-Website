@@ -7,7 +7,7 @@ var swiper = new Swiper('.mySwiper', {
   slidesPerView: 2,
   loop: true,
   breakpoints: {
-    994: {
+    1025: {
       slidesPerView: 2,
       centerInsufficientSlides: true,
     },

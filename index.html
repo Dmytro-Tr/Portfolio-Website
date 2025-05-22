@@ -15,32 +15,32 @@
 </head>
 
 <body>
-  <header class="header section">
+  <header class="header">
     <div class="header_container container">
       <nav class="header_nav">
-        <a class="header_link H5" href="">Home</a>
-        <a class="header_link H5" href="">Work</a>
-        <a class="header_link H5" href="">Testimonials</a>
-        <a class="header_link H5" href="">About</a>
+        <a class="header_link H5" href="#home">Home</a>
+        <a class="header_link H5" href="#work">Work</a>
+        <a class="header_link H5" href="#testimonials">Testimonials</a>
+        <a class="header_link H5" href="#about">About</a>
       </nav>
       <a class="header_logo_link" href="">
         <img class="header_logo" src="./src/images/header/D and T-Photoroom.png" alt="logo">
       </a>
-      <div class="header_burger" onclick="myFunction(this)">
+      <button class="header_burger js-open-menu" aria-expanded="false">
         <div class="header_bar1"></div>
         <div class="header_bar2"></div>
         <div class="header_bar3"></div>
-      </div>
+      </button>
     </div>
   </header>
 
-  <div class="mobile_menu">
+  <div class="mobile_menu js-menu-container">
     <div class="mobile_menu_container">
       <nav class="mobile_nav">
-        <a class="mobile_link" href="">Home</a>
-        <a class="mobile_link" href="">Work</a>
-        <a class="mobile_link" href="">Testimonials</a>
-        <a class="mobile_link" href="">About</a>
+        <a class="mobile_link" href="#home">Home</a>
+        <a class="mobile_link" href="#work">Work</a>
+        <a class="mobile_link" href="#testimonials">Testimonials</a>
+        <a class="mobile_link" href="#about">About</a>
       </nav>
       <div class="mobile_social">
         <a href="">LinkedIn</a>
@@ -50,8 +50,8 @@
   </div>
 
   <main>
-    <section class="hero section">
-      <div class="hero_container container">
+    <section class="hero ">
+      <div class="hero_container container" id="home">
         <div class="hero_content">
           <div class="hero_desc_hello">
             <a class="hero_desc_hello_link H4" href="">👋 Hello All</a>
@@ -61,8 +61,8 @@
               Your Pixel-Perfect<br>
               Frontend Dev</h1>
             <div class="hero_desc_links">
-              <a class="hero_desc_link_view H4 btn_1" href="">View My Work</a>
-              <a class="hero_desc_link_contact H4 btn_2" href="">Contact Me</a>
+              <a class="hero_desc_link_view H4 btn_1" href="#work">View My Work</a>
+              <a class="hero_desc_link_contact H4 btn_2" href="#contact">Contact Me</a>
             </div>
           </div>
         </div>
@@ -72,11 +72,10 @@
       </div>
     </section>
 
-    <section class="mywork section">
+    <section class="mywork section" id="work">
       <div class="mywork_container container">
         <h2 class="mywork_title H2">My Recent Work</h2>
         <ul class="mywork_box_content">
-
           <li class="mywork_content">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">Brainwave</h3>
@@ -97,8 +96,6 @@
               <img class="mywork_img" src="./src/images/mywork/Brainwave.jpg" alt="Website screenshot">
             </a>
           </li>
-
-
           <li class="mywork_content">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">Lidia</h3>
@@ -118,8 +115,6 @@
               <img class="mywork_img" src="./src/images/mywork/Lidia.jpg" alt="Website screenshot">
             </a>
           </li>
-
-
           <li class="mywork_content ">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">Simply Chocolate</h3>
@@ -141,7 +136,6 @@
               <img class="mywork_img" src="./src/images/mywork/SimplyChocolate.jpg" alt="Website screenshot">
             </a>
           </li>
-
           <li class="mywork_content hidden">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">Yachtadventures</h3>
@@ -164,7 +158,6 @@
               <img class="mywork_img" src="./src/images/mywork/yachtadventures.jpg" alt="Website screenshot">
             </a>
           </li>
-
           <li class="mywork_content hidden">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">Relvise</h3>
@@ -185,7 +178,6 @@
               <img class="mywork_img" src="./src/images/mywork/Relvise.jpg" alt="Website screenshot">
             </a>
           </li>
-
           <li class="mywork_content hidden">
             <div class="mywork_content_text">
               <h3 class="mywork_text_title H3">WebStudio</h3>
@@ -210,7 +202,7 @@
       </div>
     </section>
 
-    <section class="reviews section">
+    <section class="reviews section" id="testimonials">
       <div class="reviews_container container">
         <div class="reviews_header">
           <h2 class="reviews_title H2">Some generous reviews</h2>
@@ -246,56 +238,80 @@
               <p class="reviews_swiper_name">Vill Chan</p>
             </div>
           </div>
-          <!-- If we need navigation buttons -->
+          <!-- navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
-    <section class="aboutme section">
+
+    <section class="aboutme" id="about">
       <div class="aboutme_container container">
         <div class="aboutme_content">
           <h2 class="aboutme_title H2">A Little Bit About Me</h2>
-          <p class="aboutme_text H5">I am a junior Frontend developer. During my studies, I had
+          <p class="aboutme_text H5">I am a Frontend developer. During my studies, I had
             experience working on several team projects. In one of them I was a Team Lead where I helped solve various
             problems and thanks to my attention to detail the project was completed with a few minor edits and within
             the set deadlines. I can search and use
             information from different sources, learn new knowledge, and
             easily work with new computer programs.</p>
-          <button class="aboutme_button" type="button"></button>
+          <a class="aboutme_button H4 btn_2" type="button" href="#contact">Contact Me</a>
         </div>
         <div class="aboutme_img_box">
-          <img src="" alt="">
+          <img class="aboutme_img" src="./src/images/aboutme/Img2.png" alt="image boy">
         </div>
       </div>
     </section>
 
-    <!-- <section>
-      <div class="mywork_container">
-        <ul class="mywork_list">
-          <li class="mywork_item">Some content, text, picture are inserted</li>
-          <li class="mywork_item">Some content, text, picture are inserted</li>
-          <li class="mywork_item">Some content, text, picture are inserted</li>
-          <li class="mywork_item hidden">Some content, text, picture are inserted</li>
-          <li class="mywork_item hidden">Some content, text, picture are inserted</li>
-          <li class="mywork_item hidden">Some content, text, picture are inserted</li>
-          <li class="mywork_item hidden">Some content, text, picture are inserted</li>
-          <li class="mywork_item hidden">Some content, text, picture are inserted</li>
-        </ul>
-        <button class="mywork_button">Load more</button>
+    <section class="contact section" id="contact">
+      <div class="contact_container container">
+        <h2 class="contact_title H2">Message portal</h2>
+        <div class="contact_content">
+          <div class="contact_desc">
+            <h3 class="contact_subtitle H4">Do you have a question or an idea?<br />Write to me: 👋</h3>
+            <ol class="contact_list H5">
+              <li class="contact_item H5">What is your name?</li>
+              <li class="contact_item H5">How can I contact you?</li>
+              <li class="contact_item H5">What do you want to tell me?</li>
+            </ol>
+            <p class="contact_desc_text H5">Sometimes one idea changes everything 😉</p>
+          </div>
+          <div class="contact_box_form">
+            <form class="contact_form">
+              <div class="contact_group">
+                <input class="contact_input H6" placeholder="" type="text" required="">
+                <label class="contact_label_placeholder H6" for="name">Name</label>
+              </div>
+              <div class="contact_group">
+                <input class="contact_input H6" placeholder="" type="text" required="">
+                <label class="contact_label_placeholder H6" for="contact">Your contact</label>
+              </div>
+              <div class="contact_group">
+                <textarea class="contact_textarea H6" placeholder="" id="comment" name="comment" rows="3"
+                  required=""></textarea>
+                <label class="contact_label_placeholder H6" for="comment">Comment</label>
+              </div>
+              <button class="contact_button btn_4 H5" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </section> -->
-
+    </section>
 
   </main>
 
-  <footer>
-    <div class="container">
-
+  <footer class="footer section">
+    <div class="footer_container container">
+      <h2 class="footer_title H1">Let’s work together and make everything super cute and super useful.</h2>
+      <a class="footer_button H4 btn_2" type="button" href="#contact">Contact Me</a>
+      <div class="footer_social_box">
+        <a class="footer_social_link" href="http://">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
-  <script src="./src/js/burger-btn.js"></script>
+  <script src="./src/js/mobile-menu.js"></script>
+  <!-- <script src="./src/js/burger-btn.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./src/js/reviews-swiper.js"></script>
   <script src="./src/js/mywork.js"></script>

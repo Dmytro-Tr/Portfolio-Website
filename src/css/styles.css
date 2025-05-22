@@ -39,10 +39,13 @@ body {
   display: none;
 }
 
-@media (max-width:700px) {
+@media (max-width:768px) {
   .header_burger {
     display: inline-block;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 100;
   }
 
   .header_bar1,
@@ -98,7 +101,7 @@ body {
   margin-left: 40%;
   padding: 5rem 1rem 1rem 1rem;
   height: 100%;
-  background-color: #403930;
+  background-color: #ffddbf;
 }
 
 .mobile_nav {
@@ -111,7 +114,7 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
-  color: #fff8f2;
+  color: #403930;
 }
 
 .mobile_social {}
@@ -120,11 +123,12 @@ body {
 .hero_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero_content {
-  padding-top: 66px;
-  padding-bottom: 146px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .hero_desc_hello {
@@ -149,71 +153,29 @@ body {
   flex-wrap: wrap;
 }
 
-.hero_desc_link_view {
-  padding: 24px 51px;
-}
-
-.hero_desc_link_contact {
-  padding: 24px 66px;
-}
-
 .hero_img_box {
   flex-shrink: 0;
   max-width: 484px;
   margin-top: auto;
 }
 
-@media screen and (max-width:1366px) {
-  .hero_img_box {
-    max-width: 365px;
-  }
-
-  .hero_content {
-    padding-top: 55px;
-    padding-bottom: 123px;
-  }
-}
-
 .hero_box_image {
   width: 100%;
 }
 
-@media screen and (max-width:1220px) {
-  .hero_desc_link_view {
-    padding: 19px 41.5px;
-  }
-
-  .hero_desc_link_contact {
-    padding: 19px 54px;
-  }
-
-  .hero_content {
-    padding-top: 51px;
-    padding-bottom: 113px;
+@media screen and (max-width:1280px) {
+  .hero_img_box {
+    max-width: 365px;
   }
 }
 
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1024px) {
   .hero_img_box {
     max-width: 335px;
-    margin-top: 5rem;
-  }
-
-  .hero_content {
-    padding-top: 51px;
-    padding-bottom: 56px;
   }
 }
 
-@media screen and (max-width:860px) {
-  .hero_content {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-}
-
-@media screen and (max-width:806px) {
+@media screen and (max-width:768px) {
   .hero_container {
     flex-direction: column;
   }
@@ -228,6 +190,10 @@ body {
   .hero_desc_links {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hero_title {
+    margin-bottom: 24px;
   }
 }
 
@@ -256,7 +222,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: all 0.5s ease-in-out;
 }
 
@@ -265,6 +231,8 @@ body {
 }
 
 .mywork_content_text {
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 72px;
 }
 
@@ -307,7 +275,7 @@ body {
   padding: 6px 12px;
 }
 
-@media screen and (max-width:1220px) {
+@media screen and (max-width:1280px) {
   .mywork {
     padding-top: 74px;
     padding-bottom: 74px;
@@ -316,9 +284,13 @@ body {
   .mywork_content_text {
     padding-left: 50px;
   }
+
+  .mywork_content_img {
+    max-width: 400px;
+  }
 }
 
-@media screen and (max-width:994px) {
+@media screen and (max-width:1024px) {
   .mywork {
     padding-top: 68px;
     padding-bottom: 68px;
@@ -337,53 +309,29 @@ body {
 
   .mywork_text_links {
     justify-content: center;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
+  }
+
+  .mywork_content_img {
+    max-width: 590px;
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
   .mywork {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-}
 
-/* Вспливаюче додаткове повідомлення спан в спані*/
-/* .mywork_tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+  .mywork_text_desc {
+    margin-bottom: 16px;
+  }
 }
-
-.mywork_tooltip .mywork_tooltiptext {
-  visibility: hidden;
-  width: 100%;
-  background: #ffddbf;
-  color: #403930;
-  text-align: left;
-  border-radius: 16px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.mywork_tooltip:hover .mywork_tooltiptext {
-  visibility: visible;
-  opacity: 1;
-} */
 
 /* ------reviews----- */
-.reviews {
-  padding-top: 128px;
-  padding-bottom: 128px;
+.reviews_container {
+  max-width: 1236px
 }
-
-.reviews_container {}
 
 .reviews_header {
   text-align: center;
@@ -400,12 +348,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
-.mySwiper {}
-
-.reviewsSwiper {}
-
-.swiper-wrapper {}
 
 .reviews_swiper_wrapper {
   max-width: 936px;
@@ -440,12 +382,7 @@ body {
   color: #594f43;
 }
 
-@media screen and (max-width:1220px) {
-  .reviews {
-    padding-top: 106px;
-    padding-bottom: 106px;
-  }
-
+@media screen and (max-width:1280px) {
   .reviews_swiper_text {
     max-width: 332px;
   }
@@ -455,23 +392,13 @@ body {
   }
 }
 
-@media screen and (max-width:994px) {
-  .reviews {
-    padding-top: 86px;
-    padding-bottom: 86px;
-  }
-
+@media screen and (max-width:1024px) {
   .reviews_swiper_text {
     max-width: 482px;
   }
 }
 
-@media screen and (max-width:700px) {
-  .reviews {
-    padding-top: 68px;
-    padding-bottom: 68px;
-  }
-
+@media screen and (max-width:768px) {
   .reviews_swiper_text {
     max-width: 292px;
   }
@@ -482,32 +409,223 @@ body {
 }
 
 @media screen and (max-width:425px) {
-  .reviews {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
   .reviews_swiper_text {
     max-width: 206px;
   }
 }
 
 
-/* TEST TEST TEST TEST TEST TEST TEST TEST */
-.mywork_list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/*----------- aboutme ----------- */
+.aboutme {
+  background: rgba(255, 221, 191, 0.5);
 }
 
-.mywork_item {
-  padding: 10px;
-  margin-bottom: 10px;
-  background: #f0f0f0;
+.aboutme_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.aboutme_content {
+  max-width: 460px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.aboutme_title {
+  margin-bottom: 8px;
+}
+
+.aboutme_text {
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.aboutme_img_box {
+  flex-shrink: 0;
+  max-width: 484px;
+  margin-top: auto;
+}
+
+@media screen and (max-width:1024px) {
+  .aboutme_img_box {
+    max-width: 335px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .aboutme_container {
+    flex-direction: column;
+  }
+
+  .aboutme_img_box {
+    max-width: 335px;
+    margin: 0 auto 0
+  }
+
+  .aboutme_button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutme_content {
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
+}
+
+/* ---------- contact ---------- */
+.contact {}
+
+.contact_container {}
+
+.contact_title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact_content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact_desc {}
+
+.contact_subtitle {
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.contact_list {
+  margin-bottom: 18px;
+}
+
+.contact_item {
+  font-weight: 500;
+  list-style: inside;
+}
+
+.contact_desc_text {
+  font-weight: 600;
+}
+
+.contact_box_form {
+  width: 500px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_group {
+  position: relative;
+}
+
+.contact_input {
+  background-color: transparent;
+}
+
+.contact_label_placeholder {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #ffeed9;
+  transition: all .3s ease;
+}
+
+.contact_textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact_group .contact_input,
+.contact_group .contact_textarea {
+  box-sizing: border-box;
+  padding: 10px 10px;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  outline: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 250ms ease-in;
 }
 
-.mywork_item.hidden {
-  display: none;
+.contact_group .contact_input:placeholder-shown+label,
+.contact_group .contact_textarea:placeholder-shown+label {
+  top: 10px;
+  background-color: transparent;
+}
+
+.contact_group .contact_input:hover,
+.contact_group .contact_textarea:hover {
+  box-shadow: 0px 4px 8px -1px rgba(89, 79, 67, 0.6);
+}
+
+.contact_group .contact_input:focus,
+.contact_group .contact_textarea:focus {
+  border-color: #594f43;
+  box-shadow: 0px 4px 8px -1px rgba(89, 79, 67, 0.6);
+}
+
+.contact_button {
+  background-color: transparent;
+  padding: 6px 40px;
+}
+
+@media screen and (max-width:1280px) {
+  .contact_box_form {
+    width: 450px;
+  }
+
+  .contact_label_placeholder {
+    top: -8px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .contact_box_form {
+    width: 400px;
+  }
+
+  .contact_label_placeholder {
+    top: -7px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .contact_content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ---------- footer ---------- */
+.footer {
+  background: rgba(255, 221, 191, 0.5);
+}
+
+.footer_container {}
+
+.footer_title {
+  margin-bottom: 56px;
+}
+
+.footer_button {}
+
+.footer_social_box {}
+
+.footer_social_link {}
+
+@media screen and (max-width:806px) {
+
+  .footer_button {
+    display: block;
+    margin: 0 auto;
+  }
 }
