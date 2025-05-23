@@ -27,6 +27,22 @@ body {
   font-weight: 600;
   color: #594f43;
   padding: 10px 0;
+  position: relative;
+}
+
+.header_link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  border-bottom: 3px solid #594f43;
+  border-radius: 100px;
+  left: 0;
+  bottom: 10px;
+  transition: all 250ms ease-in;
+}
+
+.header_link:hover::after {
+  width: 100%;
 }
 
 .header_logo {
@@ -102,6 +118,10 @@ body {
   padding: 5rem 1rem 1rem 1rem;
   height: 100%;
   background-color: #ffddbf;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile_nav {
@@ -115,9 +135,21 @@ body {
   font-size: 20px;
   line-height: 150%;
   color: #403930;
+  transition: all 250ms ease-in;
 }
 
-.mobile_social {}
+.mobile_link:hover,
+.mobile_link:active {
+  transform: scale(0.95);
+}
+
+.mobile_social {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 
 /* ------HERO------ */
 .hero_container {
@@ -300,6 +332,7 @@ body {
     flex-direction: column;
     max-width: 591px;
     margin: 0 auto;
+    align-items: stretch;
   }
 
   .mywork_content_text {
@@ -315,6 +348,10 @@ body {
   .mywork_content_img {
     max-width: 590px;
   }
+
+  .mywork_title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -326,6 +363,7 @@ body {
   .mywork_text_desc {
     margin-bottom: 16px;
   }
+
 }
 
 /* ------reviews----- */
@@ -448,6 +486,10 @@ body {
   margin-top: auto;
 }
 
+.aboutme_box_button {
+  display: flex;
+}
+
 @media screen and (max-width:1024px) {
   .aboutme_img_box {
     max-width: 335px;
@@ -465,13 +507,17 @@ body {
   }
 
   .aboutme_button {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
   }
 
   .aboutme_content {
     padding-top: 48px;
     padding-bottom: 0;
+  }
+
+  .aboutme_title {
+    text-align: center;
   }
 }
 
@@ -616,11 +662,31 @@ body {
   margin-bottom: 56px;
 }
 
+.footer_button_social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .footer_button {}
 
-.footer_social_box {}
+.footer_social_box {
+  display: flex;
+  gap: 24px;
+}
 
-.footer_social_link {}
+.social_link {
+  fill: #403930;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 250ms ease-in;
+}
+
+.social_link:hover {
+  transform: scale(1.2);
+}
 
 @media screen and (max-width:806px) {
 
@@ -629,3 +695,7 @@ body {
     margin: 0 auto;
   }
 }
+
+.social_link {}
+
+.social_link_svg {}
