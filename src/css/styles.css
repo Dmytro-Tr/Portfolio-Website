@@ -561,6 +561,7 @@ body {
 
 .contact_box_form {
   width: 500px;
+  position: relative;
 }
 
 .contact_form {
@@ -622,6 +623,33 @@ body {
 .contact_button {
   background-color: transparent;
   padding: 6px 40px;
+}
+
+/**/
+.contact_message {
+  display: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 50%;
+}
+
+.contact_message.success {
+  background-color: #e6f7ec;
+  color: #287d3c;
+  border: 1px solid #b6e2c6;
+}
+
+.contact_message.error {
+  background-color: #fdecea;
+  color: #b73232;
+  border: 1px solid #f5c2c0;
 }
 
 @media screen and (max-width:1280px) {
