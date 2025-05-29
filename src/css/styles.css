@@ -165,13 +165,24 @@ body {
 
 .hero_desc_hello {
   margin-bottom: 24px;
+  width: 179px;
 }
 
-.hero_desc_hello_link {
+.hero_desc_hello_box {
   color: #403930;
-  padding: 12px 24px;
+  padding: 14px 24px;
   background-color: #ffddbf;
   border-radius: 10px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_desc_img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
 }
 
 .hero_title {
@@ -389,6 +400,7 @@ body {
 
 .reviews_swiper_wrapper {
   max-width: 936px;
+  align-items: center;
 }
 
 .swiper-slide {
@@ -618,6 +630,18 @@ body {
 .contact_group .contact_textarea:focus {
   border-color: #594f43;
   box-shadow: 0px 4px 8px -1px rgba(89, 79, 67, 0.6);
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s 0s;
+  -webkit-text-fill-color: #403930 !important;
+  background-color: #ffeed9 !important;
+  caret-color: #594f43;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
 
 .contact_button {

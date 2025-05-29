@@ -23,9 +23,9 @@
         <a class="header_link H5" href="#testimonials">Testimonials</a>
         <a class="header_link H5" href="#about">About</a>
       </nav>
-      <a class="header_logo_link" href="">
+      <div class="header_logo_link" href="">
         <img class="header_logo" src="./src/images/header/D and T-Photoroom.png" alt="logo">
-      </a>
+      </div>
       <button class="header_burger js-open-menu" aria-expanded="false">
         <div class="header_bar1"></div>
         <div class="header_bar2"></div>
@@ -64,7 +64,10 @@
       <div class="hero_container container" id="home">
         <div class="hero_content">
           <div class="hero_desc_hello">
-            <a class="hero_desc_hello_link H4" href="">👋 Hello All</a>
+            <div class="hero_desc_hello_box H4">
+              <img class="hero_desc_img" src="./src/images/hero/Fluent_Emoji_Color.png" alt="Hello">
+              <p>Hello All</p>
+            </div>
           </div>
           <div class="hero_desc">
             <h1 class="hero_title H1">I'm Dmytro -<br>
@@ -288,31 +291,24 @@
         <div class="swiper mySwiper reviewsSwiper">
           <div class="swiper-wrapper reviews_swiper_wrapper">
             <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
-                not be taking me in any new,
-                creative design
-                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
-                exactly what I
-                needed to take.</p>
-              <p class="reviews_swiper_name">Aika Chan</p>
+              <p class="reviews_swiper_text">The work was done clearly according to the specifications and on time.
+                Dmytro is responsible for the details and is
+                always in touch.</p>
+              <p class="reviews_swiper_name">Boris Ivasuk</p>
             </div>
             <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
-                not be taking me in any new,
-                creative design
-                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
-                exactly what I
-                needed to take.</p>
-              <p class="reviews_swiper_name">Moksa Chan</p>
+              <p class="reviews_swiper_text">We worked together on a team project. Dmytro was proactive, always in
+                touch, and not afraid to ask questions. He
+                navigated code confidently and often helped fix issues beyond his own tasks.</p>
+              <p class="reviews_swiper_name">Oksana Kvitka</p>
             </div>
             <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">I had grown a little bit disappointed when I realized that my work would
-                not be taking me in any new,
-                creative design
-                directions. Thankfully, I found Salman Khan and his creativity that goes above and beyond, proving to be
-                exactly what I
-                needed to take.</p>
-              <p class="reviews_swiper_name">Vill Chan</p>
+              <p class="reviews_swiper_text">Dmytro was our Team Lead on the training project. He always clearly
+                distributed tasks, helped to understand technical
+                nuances and supported the team. It was comfortable to work under his leadership - he was always open to
+                dialogue and
+                ready to explain if something was unclear.</p>
+              <p class="reviews_swiper_name">Alina Plash</p>
             </div>
           </div>
           <!-- navigation buttons -->
@@ -326,15 +322,18 @@
       <div class="aboutme_container container">
         <div class="aboutme_content">
           <h2 class="aboutme_title H2">A Little Bit About Me</h2>
-          <p class="aboutme_text H5">I am a Frontend developer. During my studies, I had
-            experience working on several team projects. In one of them I was a Team Lead where I helped solve various
-            problems and thanks to my attention to detail the project was completed with a few minor edits and within
-            the set deadlines. I can search and use
-            information from different sources, learn new knowledge, and
-            easily work with new computer programs.</p>
+          <p class="aboutme_text H5">
+            I am a Junior Frontend Developer with a passion for creating clean,
+            responsive and user-friendly interfaces.
+            During my studies, I gained practical experience through
+            numerous team projects, including leadership roles. I truly enjoy
+            creating websites that are both functional and visually appealing. I
+            am constantly evolving through practical challenges, and recently I
+            even made peace with artificial intelligence. Now solving complex
+            problems seems not only possible, but also exciting.
+          </p>
           <div class="aboutme_box_button">
             <a class="aboutme_button H4 btn_2" type="button" href="#contact">Contact Me</a>
-
           </div>
         </div>
         <div class="aboutme_img_box">
@@ -348,7 +347,7 @@
         <h2 class="contact_title H2">Message portal</h2>
         <div class="contact_content">
           <div class="contact_desc">
-            <h3 class="contact_subtitle H4">Do you have a question or an idea?<br />Write to me: 👋</h3>
+            <h3 class="contact_subtitle H4">Do you have a question or an idea?<br />Write to me:</h3>
             <ol class="contact_list H5">
               <li class="contact_item H5">What is your name?</li>
               <li class="contact_item H5">How can I contact you?</li>
@@ -374,7 +373,6 @@
               <button class="contact_button btn_4 H5" type="submit">Send</button>
               <div id="formMessage" class="contact_message H6">T E S T</div>
             </form>
-
           </div>
         </div>
       </div>
