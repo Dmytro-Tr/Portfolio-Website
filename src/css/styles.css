@@ -165,12 +165,12 @@ body {
 
 .hero_desc_hello {
   margin-bottom: 24px;
-  width: 179px;
+  max-width: 180px;
 }
 
 .hero_desc_hello_box {
   color: #403930;
-  padding: 14px 24px;
+  padding: 12px 22px;
   background-color: #ffddbf;
   border-radius: 10px;
   display: flex;
@@ -246,8 +246,6 @@ body {
   padding-bottom: 88px;
   background: rgba(255, 221, 191, 0.5);
 }
-
-.mywork_container {}
 
 .mywork_title {
   margin-bottom: 40px;
@@ -387,8 +385,6 @@ body {
   margin-bottom: 96px;
 }
 
-.reviews_title {}
-
 .reviews_subtitle {
   font-weight: 500;
 }
@@ -464,6 +460,59 @@ body {
   }
 }
 
+/*----------- aboutme ----------- */
+
+.skills {}
+
+.skills_container {
+  padding: 0;
+  max-width: max-content;
+  width: max-content;
+}
+
+.skills_upper {
+  overflow: hidden;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* background-color: rgba(255, 221, 191, 0.2); */
+  background-color: rgba(64, 57, 48, 0.9);
+  display: flex;
+}
+
+.skills_upper_list {
+  display: flex;
+  gap: 16px;
+  padding: 8px 16px 8px 0;
+}
+
+.skills_upper .skills_upper_list {
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.skills_upper_item {
+  color: rgb(255, 238, 217);
+  flex-shrink: 0;
+}
+
+.skills_upper_item::after {
+  content: "•";
+  padding-left: 16px;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100.02%);
+  }
+}
+
 
 /*----------- aboutme ----------- */
 .aboutme {
@@ -534,10 +583,6 @@ body {
 }
 
 /* ---------- contact ---------- */
-.contact {}
-
-.contact_container {}
-
 .contact_title {
   text-align: center;
   margin-bottom: 40px;
@@ -550,8 +595,6 @@ body {
   align-items: center;
   gap: 20px;
 }
-
-.contact_desc {}
 
 .contact_subtitle {
   font-weight: 700;
@@ -708,8 +751,6 @@ input:-webkit-autofill:active {
   background: rgba(255, 221, 191, 0.5);
 }
 
-.footer_container {}
-
 .footer_title {
   margin-bottom: 56px;
 }
@@ -720,8 +761,6 @@ input:-webkit-autofill:active {
   justify-content: space-between;
   align-items: flex-end;
 }
-
-.footer_button {}
 
 .footer_social_box {
   display: flex;
@@ -747,7 +786,3 @@ input:-webkit-autofill:active {
     margin: 0 auto;
   }
 }
-
-.social_link {}
-
-.social_link_svg {}
