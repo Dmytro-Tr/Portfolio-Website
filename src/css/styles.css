@@ -45,6 +45,35 @@ body {
   width: 100%;
 }
 
+.header_logo_link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_select_lang {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #403930;
+  border-radius: 8px;
+  color: #403930;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  box-shadow: 3.7px 3.7px 1px rgba(100, 73, 40, 0.7);
+  transition: all 250ms ease-in-out;
+}
+
+.header_select_lang:focus {
+  outline: none;
+  background-color: #fff8ef;
+  border-color: #403930;
+  box-shadow: -2px -2px 2px rgba(89, 79, 67, 0.8);
+}
+
 .header_logo {
   width: 50px;
   height: 50px;
@@ -88,6 +117,10 @@ body {
 
   .header_nav {
     display: none;
+  }
+
+  .header_select_lang {
+    order: 1;
   }
 }
 
@@ -170,7 +203,7 @@ body {
 
 .hero_desc_hello_box {
   color: #403930;
-  padding: 12px 22px;
+  padding: 12px;
   background-color: #ffddbf;
   border-radius: 10px;
   display: flex;
@@ -207,12 +240,20 @@ body {
 }
 
 @media screen and (max-width:1280px) {
+  .hero_title {
+    max-width: 600px;
+  }
+
   .hero_img_box {
     max-width: 365px;
   }
 }
 
 @media screen and (max-width:1024px) {
+  .hero_title {
+    max-width: 510px;
+  }
+
   .hero_img_box {
     max-width: 335px;
   }
@@ -308,6 +349,13 @@ body {
   border: 1px solid #4e5e80;
 }
 
+/* .mywork_container .mywork_button+.hidden {
+  display: none;
+} */
+.hidden {
+  display: none !important;
+}
+
 .mywork_container .mywork_button {
   margin: 20px auto 0;
   display: flex;
@@ -315,6 +363,7 @@ body {
   justify-content: center;
   padding: 6px 12px;
 }
+
 
 @media screen and (max-width:1280px) {
   .mywork {
@@ -460,21 +509,17 @@ body {
   }
 }
 
-/*----------- aboutme ----------- */
-
-.skills {}
-
+/*----------- skills ----------- */
 .skills_container {
   padding: 0;
   max-width: max-content;
-  width: max-content;
+  overflow: hidden;
 }
 
 .skills_upper {
   overflow: hidden;
   font-weight: 600;
   text-transform: uppercase;
-  /* background-color: rgba(255, 221, 191, 0.2); */
   background-color: rgba(64, 57, 48, 0.9);
   display: flex;
 }
@@ -512,7 +557,6 @@ body {
     transform: translateX(-100.02%);
   }
 }
-
 
 /*----------- aboutme ----------- */
 .aboutme {
@@ -599,6 +643,7 @@ body {
 .contact_subtitle {
   font-weight: 700;
   margin-bottom: 18px;
+  max-width: 440px;
 }
 
 .contact_list {
@@ -727,6 +772,10 @@ input:-webkit-autofill:active {
   .contact_label_placeholder {
     top: -8px;
   }
+
+  .contact_subtitle {
+    max-width: 380px;
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -736,6 +785,10 @@ input:-webkit-autofill:active {
 
   .contact_label_placeholder {
     top: -7px;
+  }
+
+  .contact_subtitle {
+    max-width: 340px;
   }
 }
 

@@ -4,27 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./src/images/header/D and T-Photoroom.png" type="png">
+  <link rel="shortcut icon" href="./src/images/header/D_and_T-Photoroom.png">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Eczar:600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <link href="https://fonts.googleapis.com/css?family=Lora:700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./src/css/styles.css">
-  <title>Portfolio Dmytro_Tr</title>
+  <title>Portfolio Dmytro-Tr Frontend Developer</title>
 </head>
 
 <body>
   <header class="header">
     <div class="header_container container">
       <nav class="header_nav">
-        <a class="header_link H5" href="#home">Home</a>
-        <a class="header_link H5" href="#work">Work</a>
-        <a class="header_link H5" href="#testimonials">Testimonials</a>
-        <a class="header_link H5" href="#about">About</a>
+        <a class="header_link H5" href="#home" data-lang="header_nav_home">Home</a>
+        <a class="header_link H5" href="#projects" data-lang="header_nav_work">Projects</a>
+        <a class="header_link H5" href="#testimonials" data-lang="header_nav_testimonials">Testimonials</a>
+        <a class="header_link H5" href="#about" data-lang="header_nav_about">About</a>
       </nav>
-      <div class="header_logo_link" href="">
-        <img class="header_logo" src="./src/images/header/D and T-Photoroom.png" alt="logo">
+      <div class="header_logo_link">
+        <select class="header_select_lang">
+          <option value="en" selected>EN</option>
+          <option value="ua">UA</option>
+        </select>
+
+        <img class="header_logo" src="./src/images/header/D_and_T-Photoroom.png" alt="logo">
       </div>
       <button class="header_burger js-open-menu" aria-expanded="false">
         <div class="header_bar1"></div>
@@ -37,10 +40,10 @@
   <div class="mobile_menu js-menu-container">
     <div class="mobile_menu_container">
       <nav class="mobile_nav">
-        <a class="mobile_link" href="#home">Home</a>
-        <a class="mobile_link" href="#work">Work</a>
-        <a class="mobile_link" href="#testimonials">Testimonials</a>
-        <a class="mobile_link" href="#about">About</a>
+        <a class="mobile_link" href="#home" data-lang="mobile_nav_home">Home</a>
+        <a class="mobile_link" href="#projects" data-lang="mobile_nav_work">Projects</a>
+        <a class="mobile_link" href="#testimonials" data-lang="mobile_nav_testimonials">Testimonials</a>
+        <a class="mobile_link" href="#about" data-lang="mobile_nav_about">About</a>
       </nav>
       <div class="mobile_social">
         <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank">
@@ -66,16 +69,16 @@
           <div class="hero_desc_hello">
             <div class="hero_desc_hello_box H4">
               <img class="hero_desc_img" src="./src/images/hero/Fluent_Emoji_Color.png" alt="Hello">
-              <p>Hello All</p>
+              <p data-lang="hero_desc_hello">Hello All</p>
             </div>
           </div>
           <div class="hero_desc">
-            <h1 class="hero_title H1">I'm Dmytro -<br>
+            <h1 class="hero_title H1" data-lang="hero_title">I'm Dmytro -<br>
               Your Pixel-Perfect<br>
               Frontend Dev</h1>
             <div class="hero_desc_links">
-              <a class="hero_desc_link_view H4 btn_1" href="#work">View My Work</a>
-              <a class="hero_desc_link_contact H4 btn_2" href="#contact">Contact Me</a>
+              <a class="hero_desc_link_view H4 btn_1" href="#projects" data-lang="hero_link_myWork">View Projects</a>
+              <a class="hero_desc_link_contact H4 btn_2" href="#contact" data-lang="hero_desc_contactMe">Contact Me</a>
             </div>
           </div>
         </div>
@@ -87,6 +90,7 @@
 
     <section class="skills">
       <div class="skills_container container">
+        <h2 class="H2 visually-hidden">My skills</h2>
         <div class="skills_upper">
           <ul class="skills_upper_list">
             <li class="skills_upper_item H4">HTML5</li>
@@ -125,9 +129,9 @@
       </div>
     </section>
 
-    <section class="mywork section" id="work">
+    <section class="mywork section" id="projects">
       <div class="mywork_container container">
-        <h2 class="mywork_title H2">My Recent Work</h2>
+        <h2 class="mywork_title H2" data-lang="mywork_title">My Development Journey</h2>
         <ul class="mywork_box_content">
 
           <li class="mywork_content">
@@ -318,37 +322,42 @@
             </a>
           </li>
         </ul>
-        <button class="mywork_button btn_3 H4">Load more</button>
+        <button class="mywork_button btn_3 H4" id="loadMoreBtn" data-lang="mywork_button_loadMore">Load more</button>
+        <button class="mywork_button btn_3 H4 hidden" id="hideAllBtn" data-lang="mywork_button_hideAll">Hide
+          all</button>
       </div>
     </section>
 
     <section class="reviews section" id="testimonials">
       <div class="reviews_container container">
         <div class="reviews_header">
-          <h2 class="reviews_title H2">Some generous reviews</h2>
-          <p class="reviews_subtitle H5">Some of my favorite customer and colleague testimonials</p>
+          <h2 class="reviews_title H2" data-lang="reviews_title">Some generous reviews</h2>
+          <p class="reviews_subtitle H5" data-lang="reviews_subtitle">Some of my favorite customer and colleague
+            testimonials</p>
         </div>
         <div class="swiper mySwiper reviewsSwiper">
           <div class="swiper-wrapper reviews_swiper_wrapper">
             <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">The work was done clearly according to the specifications and on time.
-                Dmytro is responsible for the details and is
-                always in touch.</p>
-              <p class="reviews_swiper_name">Boris Ivasuk</p>
-            </div>
-            <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">We worked together on a team project. Dmytro was proactive, always in
-                touch, and not afraid to ask questions. He
-                navigated code confidently and often helped fix issues beyond his own tasks.</p>
-              <p class="reviews_swiper_name">Oksana Kvitka</p>
-            </div>
-            <div class="swiper-slide reviews_swiper_slide">
-              <p class="reviews_swiper_text">Dmytro was our Team Lead on the training project. He always clearly
-                distributed tasks, helped to understand technical
+              <p class="reviews_swiper_text" data-lang="reviews_swiper_text_1">
+                Dmytro was our Team Lead on the training project. He always clearly distributed tasks, helped to
+                understand technical
                 nuances and supported the team. It was comfortable to work under his leadership - he was always open to
-                dialogue and
-                ready to explain if something was unclear.</p>
-              <p class="reviews_swiper_name">Alina Plash</p>
+                dialogue and ready to explain if something was unclear.
+              </p>
+              <p class="reviews_swiper_name" data-lang="reviews_swiper_name_1">Alina Plash</p>
+            </div>
+            <div class="swiper-slide reviews_swiper_slide">
+              <p class="reviews_swiper_text" data-lang="reviews_swiper_text_2">We worked together on a team project.
+                Dmytro was proactive, always in touch, and not afraid to ask questions. He navigated code confidently
+                and often helped fix issues beyond his own tasks.</p>
+              <p class="reviews_swiper_name" data-lang="reviews_swiper_name_2">Oksana Kvitka</p>
+            </div>
+            <div class="swiper-slide reviews_swiper_slide">
+              <p class="reviews_swiper_text" data-lang="reviews_swiper_text_3">
+                The work was done clearly, according to the technical specifications, and on time. Dmytro is attentive
+                to detail and always in touch.
+              </p>
+              <p class="reviews_swiper_name" data-lang="reviews_swiper_name_3">Boris Ivasuk</p>
             </div>
           </div>
           <!-- navigation buttons -->
@@ -361,8 +370,8 @@
     <section class="aboutme" id="about">
       <div class="aboutme_container container">
         <div class="aboutme_content">
-          <h2 class="aboutme_title H2">A Little Bit About Me</h2>
-          <p class="aboutme_text H5">
+          <h2 class="aboutme_title H2" data-lang="aboutme_title">A Little Bit About Me</h2>
+          <p class="aboutme_text H5" data-lang="aboutme_text">
             I am a Junior Frontend Developer with a passion for creating clean,
             responsive and user-friendly interfaces.
             During my studies, I gained practical experience through
@@ -373,7 +382,7 @@
             problems seems not only possible, but also exciting.
           </p>
           <div class="aboutme_box_button">
-            <a class="aboutme_button H4 btn_2" type="button" href="#contact">Contact Me</a>
+            <a class="aboutme_button H4 btn_2" href="#contact" data-lang="aboutme_button">Contact Me</a>
           </div>
         </div>
         <div class="aboutme_img_box">
@@ -384,34 +393,36 @@
 
     <section class="contact section" id="contact">
       <div class="contact_container container">
-        <h2 class="contact_title H2">Message portal</h2>
+        <h2 class="contact_title H2" data-lang="contact_title">Message portal</h2>
         <div class="contact_content">
           <div class="contact_desc">
-            <h3 class="contact_subtitle H4">Do you have a question or an idea?<br />Write to me:</h3>
+            <h3 class="contact_subtitle H4" data-lang="contact_subtitle">Do you have a question or an idea? Write
+              to me:</h3>
             <ol class="contact_list H5">
-              <li class="contact_item H5">What is your name?</li>
-              <li class="contact_item H5">How can I contact you?</li>
-              <li class="contact_item H5">What do you want to tell me?</li>
+              <li class="contact_item H5" data-lang="contact_item_1">What is your name?</li>
+              <li class="contact_item H5" data-lang="contact_item_2">How can I contact you?</li>
+              <li class="contact_item H5" data-lang="contact_item_3">What do you want to tell me?</li>
             </ol>
-            <p class="contact_desc_text H5">Sometimes one idea changes everything 😉</p>
+            <p class="contact_desc_text H5" data-lang="contact_item_4">Sometimes one idea changes everything 😉</p>
           </div>
           <div class="contact_box_form">
             <form class="contact_form">
               <div class="contact_group">
                 <input class="contact_input H6" placeholder="" type="text" name="name" required="">
-                <label class="contact_label_placeholder H6" for="name">Name</label>
+                <label class="contact_label_placeholder H6" for="name" data-lang="contact_placeholder_name">Name</label>
               </div>
               <div class="contact_group">
                 <input class="contact_input H6" placeholder="" type="text" name="contact">
-                <label class="contact_label_placeholder H6" for="contact">Your contact</label>
+                <label class="contact_label_placeholder H6" for="contact" data-lang="contact_placeholder_contact">Your
+                  contact</label>
               </div>
               <div class="contact_group">
                 <textarea class="contact_textarea H6" placeholder="" id="comment" name="comment" rows="3"
                   required=""></textarea>
-                <label class="contact_label_placeholder H6" for="comment">Comment</label>
+                <label class="contact_label_placeholder H6" for="comment"
+                  data-lang="contact_placeholder_comment">Comment</label>
               </div>
-              <button class="contact_button btn_4 H5" type="submit">Send</button>
-              <div id="formMessage" class="contact_message H6">T E S T</div>
+              <button class="contact_button btn_4 H5" type="submit" data-lang="contact_button">Send</button>
             </form>
           </div>
         </div>
@@ -422,9 +433,10 @@
 
   <footer class="footer section">
     <div class="footer_container container">
-      <h2 class="footer_title H1">Let’s work together and make everything super cute and super useful.</h2>
+      <h2 class="footer_title H1" data-lang="footer_title">Let's work together, make everything super cute and super
+        useful.</h2>
       <div class="footer_button_social">
-        <a class="footer_button H4 btn_2" type="button" href="#contact">Contact Me</a>
+        <a class="footer_button H4 btn_2" href="#contact" data-lang="footer_button">Contact Me</a>
         <div class="footer_social_box">
           <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank">
             <svg class='social_link_svg' width='32' height='32'>
@@ -444,6 +456,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./src/js/langArr.js"></script>
+  <script src="./src/js/lang-select.js"></script>
   <script src="./src/js/mobile-menu.js"></script>
   <script src="./src/js/contact-form.js"></script>
   <script src="./src/js/reviews-swiper.js"></script>

@@ -1,6 +1,6 @@
 :root {
   --font-family: "Work Sans", sans-serif;
-  --second-family: "Eczar", serif;
+  --second-family: "Lora", serif;
 }
 
 html {
@@ -123,7 +123,7 @@ button {
 
 .H1 {
   font-family: var(--second-family);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 64px;
   line-height: 125%;
   letter-spacing: 0.02em;
@@ -132,7 +132,7 @@ button {
 
 .H2 {
   font-family: var(--second-family);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 40px;
   line-height: 125%;
   letter-spacing: 0.02em;
@@ -219,11 +219,17 @@ button {
 }
 
 .btn_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #f3f2ff;
   border-radius: 16px;
   background-color: #4e5e80;
   border: 4px solid #4e5e80;
-  padding: 24px 51px;
+  /* padding: 24px 12px; */
+  width: 270px;
+  height: 84px;
+  box-sizing: border-box;
   transition: all 250ms ease-in;
 }
 
@@ -261,11 +267,17 @@ button {
 }
 
 .btn_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #4d5566;
   border: 4px solid #4d5566;
   border-radius: 16px;
   background-color: transparent;
-  padding: 24px 66px;
+  /* padding: 24px 66px; */
+  width: 270px;
+  height: 84px;
+  box-sizing: border-box;
   transition: all 250ms ease-in;
 }
 
@@ -304,11 +316,25 @@ button {
 
 @media screen and (max-width:1280px) {
   .btn_1 {
-    padding: 19px 41.5px;
+    width: 228px;
+    height: 71px;
   }
 
   .btn_2 {
-    padding: 19px 54px;
+    width: 228px;
+    height: 71px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .btn_1 {
+    width: 210px;
+    height: 66px;
+  }
+
+  .btn_2 {
+    width: 210px;
+    height: 66px;
   }
 }
 
