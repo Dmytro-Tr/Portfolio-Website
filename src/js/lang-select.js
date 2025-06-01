@@ -2,7 +2,8 @@ const select = document.querySelector('.header_select_lang');
 const allLang = ['en', 'ua'];
 
 // Визначення активної мови
-let currentLang = localStorage.getItem('language') || checkBrowserLang || 'en';
+let currentLang =
+  localStorage.getItem('language') || checkBrowserLang() || 'en';
 
 // Встановлення значення у select
 select.value = currentLang;

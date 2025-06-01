@@ -60,11 +60,15 @@ body {
   border: 2px solid #403930;
   border-radius: 8px;
   color: #403930;
-  appearance: none;
+  padding: 2px;
   width: 35px;
   height: 35px;
   box-shadow: 3.7px 3.7px 1px rgba(100, 73, 40, 0.7);
   transition: all 250ms ease-in-out;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .header_select_lang:focus {
@@ -612,7 +616,6 @@ body {
   }
 
   .aboutme_button {
-    display: inline-block;
     margin: 0 auto;
   }
 
@@ -634,7 +637,6 @@ body {
 
 .contact_content {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -835,7 +837,6 @@ input:-webkit-autofill:active {
 @media screen and (max-width:806px) {
 
   .footer_button {
-    display: block;
     margin: 0 auto;
   }
 }
