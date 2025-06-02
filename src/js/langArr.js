@@ -40,7 +40,6 @@ const langArr = {
   hero_title: {
     en: "I'm Dmytro Your Pixel- Perfect Frontend Dev",
     ua: 'Я – Дмитро: фронтенд із точністю до пікселя.',
-    // ua: 'Я – Дмитро, фронтенд-розробник, що цінує кожен піксель.',
   },
   hero_link_myWork: {
     en: 'View Projects',
@@ -55,11 +54,46 @@ const langArr = {
     en: 'My Development Journey',
     ua: 'Моя історія розвитку',
   },
-
   // "": {
   //   "en":"",
   //   "ua":""
   // },
+  mywork_rentalCar: {
+    en: 'A site where you can book a car and enjoy your travels.',
+    ua: 'Сайт, де ви можете забронювати автомобіль та насолоджуватися подорожами.',
+  },
+  mywork_petCare: {
+    en: 'One-page website for Vetcare - reliable and high-quality care that your pet deserves!',
+    ua: 'Односторінковий веб-сайт для Vetcare - надійний та якісний догляд, якого заслуговує ваш улюбленець!',
+  },
+  mywork_portfolio: {
+    en: 'The site is a practical solution for students who seek to effectively present themselves in the professional arena.',
+    ua: 'Сайт є практичним рішенням для студентів, які прагнуть ефективно презентувати себе на професійній арені.',
+  },
+  mywork_brainwave: {
+    en: 'A very simple one-page website presentation (template) for new headphones from Brainwave.io',
+    ua: 'Дуже проста односторінкова веб-презентація (шаблон) для нових навушників від Brainwave.io',
+  },
+  mywork_lidia: {
+    en: 'An online library is a reality, and with a modern and convenient website, it is also practical and convenient.',
+    ua: 'Онлайн-бібліотека – це реальність, а завдяки сучасному та зручному веб-сайту вона також практична та зручна.',
+  },
+  simplyChocolate: {
+    en: 'If you create the most delicious chocolate, then this one-page website will help you sell it and share your new flavors.',
+    ua: 'Якщо ви створюєте найсмачніший шоколад, то цей односторінковий веб-сайт допоможе вам його продати та поділитися своїми новими смаками.',
+  },
+  mywork_yachtadventures: {
+    en: 'The Yacht Adventures project is not just a one-page website for making dreams come true. It is also my first educational team project, where I tried myself as a team leader.',
+    ua: 'Проєкт «Яхтні пригоди» – це не просто односторінковий вебсайт для втілення мрій. Це також мій перший командний освітній проєкт, де я спробував себе в ролі керівника команди.',
+  },
+  mywork_relvise: {
+    en: 'This landing page demonstrates my first steps in creating a multisection responsive website — pure HTML and CSS, no magic, just structure and logic.',
+    ua: 'Ця цільова сторінка демонструє мої перші кроки у створенні адаптивного вебсайту з кількома розділами — чистий HTML та CSS, жодної магії, лише структура та логіка.',
+  },
+  mywork_webStudio: {
+    en: 'My first one-page website is a perfect start in the world of web development',
+    ua: 'Мій перший односторінковий вебсайт – це ідеальний початок у світі веб-розробки',
+  },
 
   mywork_button_loadMore: {
     en: 'Load more',

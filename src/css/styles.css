@@ -835,8 +835,15 @@ input:-webkit-autofill:active {
 }
 
 @media screen and (max-width:806px) {
-
   .footer_button {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .footer_button_social {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
   }
 }
