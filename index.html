@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta name="description"
-    content="Explore Dmytro_Tr frontend developer portfolio showcasing responsive HTML, CSS, and React websites. Contact to build your next project!" />
+    content="Explore Dmytro_Tr frontend developer portfolio showcasing responsive HTML, CSS, and React websites. Contact to build your next project!">
   <link rel="shortcut icon" href="./src/images/header/D_and_T-Photoroom.png">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <link rel="alternate" href="https://myportfolio.com/" hreflang="en">
   <link rel="alternate" href="https://myportfolio.com/ua" hreflang="uk">
   <link rel="alternate" href="https://myportfolio.com/" hreflang="x-default">
-  <link rel="canonical" href="https://myportfolio.com" />
+  <link rel="canonical" href="https://myportfolio.com">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
         <img class="header_logo" src="./src/images/header/D_and_T-Photoroom.png" alt="logo">
       </div>
-      <button class="header_burger js-open-menu" aria-expanded="false">
+      <button class="header_burger js-open-menu" type="menu" aria-expanded="false">
         <div class="header_bar1"></div>
         <div class="header_bar2"></div>
         <div class="header_bar3"></div>
@@ -53,13 +53,15 @@
         <a class="mobile_link" href="#about" data-lang="mobile_nav_about">About</a>
       </nav>
       <div class="mobile_social">
-        <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank">
+        <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank"
+          aria-label="LinkedIn profile of Dmytro">
           <svg class='social_link_svg' width='32' height='32'>
             <use href='./src/images/icons.svg#icon-linkedin'>
             </use>
           </svg>
         </a>
-        <a class="social_link" href="https://github.com/Dmytro-Tr" target="_blank">
+        <a class="social_link" href="https://github.com/Dmytro-Tr" target="_blank"
+          aria-label="GitHub profile of Dmytro">
           <svg class='social_link_svg' width='32' height='32'>
             <use href='./src/images/icons.svg#icon-github'>
             </use>
@@ -416,11 +418,11 @@
           <div class="contact_box_form">
             <form class="contact_form">
               <div class="contact_group">
-                <input class="contact_input H6" placeholder="" type="text" name="name" required="">
+                <input class="contact_input H6" placeholder="" type="text" name="name" required id="name">
                 <label class="contact_label_placeholder H6" for="name" data-lang="contact_placeholder_name">Name</label>
               </div>
               <div class="contact_group">
-                <input class="contact_input H6" placeholder="" type="text" name="contact">
+                <input class="contact_input H6" placeholder="" type="text" name="contact" id="contact">
                 <label class="contact_label_placeholder H6" for="contact" data-lang="contact_placeholder_contact">Your
                   contact</label>
               </div>
@@ -446,13 +448,15 @@
       <div class="footer_button_social">
         <a class="footer_button H4 btn_2" href="#contact" data-lang="footer_button">Contact Me</a>
         <div class="footer_social_box">
-          <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank">
+          <a class="social_link" href="https://www.linkedin.com/in/dmytro-tr/" target="_blank"
+            aria-label="LinkedIn profile of Dmytro">
             <svg class='social_link_svg' width='32' height='32'>
               <use href='./src/images/icons.svg#icon-linkedin'>
               </use>
             </svg>
           </a>
-          <a class="social_link" href="https://github.com/Dmytro-Tr" target="_blank">
+          <a class="social_link" href="https://github.com/Dmytro-Tr" target="_blank"
+            aria-label="GitHub profile of Dmytro">
             <svg class='social_link_svg' width='32' height='32'>
               <use href='./src/images/icons.svg#icon-github'>
               </use>
