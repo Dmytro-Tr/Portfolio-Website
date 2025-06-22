@@ -287,6 +287,8 @@ body {
 
 /* ------MYWORK------*/
 .mywork {
+  overflow: hidden;
+
   padding-top: 88px;
   padding-bottom: 88px;
   background: rgba(255, 221, 191, 0.5);
@@ -519,7 +521,7 @@ body {
 
 @media screen and (max-width:425px) {
   .reviews_swiper_text {
-    max-width: 206px;
+    max-width: 246px;
   }
 }
 
@@ -855,5 +857,51 @@ input:-webkit-autofill:active {
     flex-direction: column;
     align-items: center;
     gap: 48px;
+  }
+}
+
+/* ---------- button up ---------- */
+.button_up {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f2ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px 8px 25px 8px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: box-shadow .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.button_up svg {
+  fill: #403930;
+}
+
+.button_up:hover {
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.8) 0px 8px 24px;
+}
+
+.button_up:active {
+  background-color: #555;
+}
+
+.button_up.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 768px) {
+  .button_up {
+    bottom: 20px;
+    left: auto;
+    margin-left: 0;
+    right: 20px;
   }
 }
