@@ -64,6 +64,7 @@ body {
   width: 35px;
   height: 35px;
   box-shadow: 3.7px 3.7px 1px rgba(100, 73, 40, 0.7);
+  cursor: pointer;
   transition: all 250ms ease-in-out;
 
   -webkit-appearance: none;
@@ -871,7 +872,7 @@ input:-webkit-autofill:active {
   border-radius: 25px 8px 25px 8px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 20px;
   transition: box-shadow .3s,
     opacity .5s, visibility .5s;
   opacity: 0;
@@ -902,6 +903,5 @@ input:-webkit-autofill:active {
     bottom: 20px;
     left: auto;
     margin-left: 0;
-    right: 20px;
   }
 }
